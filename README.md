@@ -13,5 +13,5 @@ if you want to use it just open folder and you will see two MAIN files "main.sto
 
 ## Content til now
 * Handling Excptions + Alert Funny 😂
-   * I tried to Handle DivideByZero and EmptyField Exception (For fun 😆)
-   [](/'Handling Exeptions + Alert'/ScreenShot/images.png)
+   * I tried to Handle DivideByZero and EmptyField Exceptions (For fun 😆)
+   ![](/Handling Exeptions + Alert/ScreenShot/images.png)
