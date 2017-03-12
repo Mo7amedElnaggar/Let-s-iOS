@@ -29,4 +29,8 @@ class ViewController: UIViewController {
             destination.yourName = TextInput.text!
         }
     }
+    // Handle Keyboard using touchBegan Fun
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
