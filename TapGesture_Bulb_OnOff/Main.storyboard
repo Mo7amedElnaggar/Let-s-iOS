@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Let_s_Try" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="view">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LightOff.png" translatesAutoresizingMaskIntoConstraints="NO" id="faV-h3-hbs">
+                                <rect key="frame" x="67" y="233" width="240" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="h9d-5m-X2J"/>
+                                    <constraint firstAttribute="height" constant="200" id="s2F-YD-BWr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light is Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zI-kA-cHT">
+                                <rect key="frame" x="123" y="155" width="130" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="faV-h3-hbs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Qi-XH-hO6"/>
+                            <constraint firstItem="faV-h3-hbs" firstAttribute="top" secondItem="8zI-kA-cHT" secondAttribute="bottom" constant="49" id="HTa-4b-g0T"/>
+                            <constraint firstItem="8zI-kA-cHT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XZT-Az-CaL"/>
+                            <constraint firstItem="faV-h3-hbs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zPI-7c-nkN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8jw-XN-0x8"/>
+                    <connections>
+                        <outlet property="imageView" destination="faV-h3-hbs" id="Hgj-aP-0FC"/>
+                        <outlet property="lableLight" destination="8zI-kA-cHT" id="xZe-KW-xdr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3362.4000000000001" y="608.54572713643188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LightOff.png" width="512" height="512"/>
+    </resources>
+</document>
