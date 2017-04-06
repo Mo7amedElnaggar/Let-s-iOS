@@ -19,6 +19,7 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.selectImage))
         
         imageView.addGestureRecognizer(gestureRecognizer)
+        imageView.isUserInteractionEnabled = true
         
     }
     
