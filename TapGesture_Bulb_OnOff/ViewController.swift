@@ -24,18 +24,18 @@ class ViewController: UIViewController {
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.changeLight))
         
         imageView.addGestureRecognizer(gestureRecognizer)
-        imageView.isUserInteractionEnabled = true
+        imageView.isUserInteractionEnabled = true // Enable user to interact with imageView
     }
     
     func changeLight(){
         if lightOn == true {
-            imageView.image = UIImage(named: "LightOff.png")
+            imageView.image = UIImage(named: "LightOff.png") // set Light off image
             lableLight.text = "Light is Off"
-            lightOn = false
+            lightOn = false  // Change the status of lighton boolean variable = false
         } else {
-            imageView.image = UIImage(named: "LightOn.png")
+            imageView.image = UIImage(named: "LightOn.png") // set Light on image
             lableLight.text = "Light is On"
-            lightOn = true
+            lightOn = true  // Change the status of lighton boolean variable = true
         }
     }
 
