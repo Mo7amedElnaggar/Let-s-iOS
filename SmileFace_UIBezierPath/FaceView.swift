@@ -11,7 +11,7 @@ import UIKit
 class FaceView: UIView {
     
     var scale: CGFloat = 0.90
-    let mouthCurvature: Double = 0.0
+    let mouthCurvature: Double = 1.0 // Change it for 1 or -1 ( Smile Face , Sad Face)
     
     private var skullRadius: CGFloat {
         return min(bounds.size.height , bounds.size.width) / 2 * scale
