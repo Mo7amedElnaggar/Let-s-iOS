@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myPortfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See my Portfolio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29d-BW-kSl">
+                                <rect key="frame" x="16" y="60" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjc-yy-y4c">
+                                <rect key="frame" x="127" y="313" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Dr8-70-DIn"/>
+                                    <constraint firstAttribute="height" constant="40" id="UKx-zo-3L3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Portfolio">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ylh-nw-w4V" kind="show" id="gSk-LP-P0C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94091731309890747" green="0.99996036291122437" blue="0.97892147302627563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="29d-BW-kSl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="B0u-na-lJ1"/>
+                            <constraint firstItem="fjc-yy-y4c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GWT-3F-chv"/>
+                            <constraint firstItem="29d-BW-kSl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="NJV-Ef-KdT"/>
+                            <constraint firstItem="fjc-yy-y4c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pAC-Bi-6r3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="29d-BW-kSl" secondAttribute="trailing" id="sSF-Yt-jkz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Load PortfolioVC-->
+        <scene sceneID="UDg-ho-wLy">
+            <objects>
+                <viewController id="ylh-nw-w4V" customClass="LoadPortfolioVC" customModule="myPortfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6oY-rL-arV"/>
+                        <viewControllerLayoutGuide type="bottom" id="kds-sW-joj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xZm-xb-SgP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhg-mv-QSf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="My Portfolio" id="Vft-ou-RVI">
+                                        <barButtonItem key="leftBarButtonItem" title="⬅︎" id="nSA-St-3B2">
+                                            <connections>
+                                                <action selector="returnMeBack:" destination="ylh-nw-w4V" id="nXZ-ah-hrn"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52i-Oo-95M">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94197624972566518" green="1" blue="0.9798470818816335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kds-sW-joj" firstAttribute="top" secondItem="52i-Oo-95M" secondAttribute="bottom" id="6WM-3a-UDi"/>
+                            <constraint firstItem="52i-Oo-95M" firstAttribute="top" secondItem="rhg-mv-QSf" secondAttribute="bottom" id="UOM-6y-yBB"/>
+                            <constraint firstItem="rhg-mv-QSf" firstAttribute="centerX" secondItem="52i-Oo-95M" secondAttribute="centerX" id="Uvg-jr-1nF"/>
+                            <constraint firstItem="52i-Oo-95M" firstAttribute="leading" secondItem="xZm-xb-SgP" secondAttribute="leadingMargin" id="eRz-LC-V5x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="52i-Oo-95M" secondAttribute="trailing" id="hus-sm-OYh"/>
+                            <constraint firstItem="rhg-mv-QSf" firstAttribute="top" secondItem="6oY-rL-arV" secondAttribute="bottom" id="jUa-7Q-TYt"/>
+                            <constraint firstItem="rhg-mv-QSf" firstAttribute="leading" secondItem="xZm-xb-SgP" secondAttribute="leading" id="yEj-le-DYJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="52i-Oo-95M" id="UIh-ER-ulC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6z8-eM-Ear" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936.79999999999995" y="111.99400299850076"/>
+        </scene>
+    </scenes>
+</document>
