@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aRc-4o-Dz9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="NI5-v6-82k">
+            <objects>
+                <viewController id="aRc-4o-Dz9" customClass="ViewController" customModule="CodeDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sB8-MP-GEl"/>
+                        <viewControllerLayoutGuide type="bottom" id="1dG-Gy-Xg2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kmF-f9-O0R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMe-Oc-DMY">
+                                <rect key="frame" x="97" y="308.5" width="180" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2jH-5t-5gs"/>
+                                    <constraint firstAttribute="width" constant="180" id="xX0-tv-A8b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Play Audio">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAudioClicked:" destination="aRc-4o-Dz9" eventType="touchUpInside" id="EDN-X7-WQz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3h-oS-f6G">
+                                <rect key="frame" x="97" y="388.5" width="180" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KOQ-81-D8x"/>
+                                    <constraint firstAttribute="width" constant="180" id="eGA-Xp-cYH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Pause Audio">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAudioClicked:" destination="aRc-4o-Dz9" eventType="touchUpInside" id="wi7-nL-eCC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Same Old Love         Selena Gomez" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qya-8I-hD9">
+                                <rect key="frame" x="16" y="70" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hug-qZ-ahE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qya-8I-hD9" firstAttribute="leading" secondItem="kmF-f9-O0R" secondAttribute="leadingMargin" id="1U8-QR-962"/>
+                            <constraint firstItem="EMe-Oc-DMY" firstAttribute="centerY" secondItem="kmF-f9-O0R" secondAttribute="centerY" id="6pU-ZV-3hG"/>
+                            <constraint firstItem="d3h-oS-f6G" firstAttribute="top" secondItem="EMe-Oc-DMY" secondAttribute="bottom" constant="30" id="7gy-hc-AP2"/>
+                            <constraint firstItem="EMe-Oc-DMY" firstAttribute="centerX" secondItem="kmF-f9-O0R" secondAttribute="centerX" id="EnZ-nl-lFw"/>
+                            <constraint firstItem="d3h-oS-f6G" firstAttribute="leading" secondItem="EMe-Oc-DMY" secondAttribute="leading" id="iNu-2H-STx"/>
+                            <constraint firstItem="Qya-8I-hD9" firstAttribute="top" secondItem="sB8-MP-GEl" secondAttribute="bottom" constant="50" id="lh1-Xl-1fl"/>
+                            <constraint firstItem="d3h-oS-f6G" firstAttribute="trailing" secondItem="EMe-Oc-DMY" secondAttribute="trailing" id="vKD-qO-RgV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qya-8I-hD9" secondAttribute="trailing" id="wtp-rm-TKW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wCz-1y-cKY"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="getColor">
+                            <color key="value" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVJ-Ea-DA6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2124" y="754.27286356821594"/>
+        </scene>
+    </scenes>
+</document>
