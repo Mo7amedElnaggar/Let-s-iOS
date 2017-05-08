@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aRc-4o-Dz9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="NI5-v6-82k">
+            <objects>
+                <viewController id="aRc-4o-Dz9" customClass="ViewController" customModule="CodeDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sB8-MP-GEl"/>
+                        <viewControllerLayoutGuide type="bottom" id="1dG-Gy-Xg2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kmF-f9-O0R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hOS-wS-F6A">
+                                <rect key="frame" x="47.5" y="258.5" width="280" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="d3l-4m-hQ3"/>
+                                    <constraint firstAttribute="width" constant="280" id="ugc-AC-bOs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Run Your Gif" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdY-4N-zsu">
+                                <rect key="frame" x="16" y="70" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vyb-B9-iOZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hOS-wS-F6A" firstAttribute="centerY" secondItem="kmF-f9-O0R" secondAttribute="centerY" id="VAC-Rz-NFC"/>
+                            <constraint firstItem="VdY-4N-zsu" firstAttribute="trailing" secondItem="kmF-f9-O0R" secondAttribute="trailingMargin" id="VWd-Es-KCG"/>
+                            <constraint firstItem="VdY-4N-zsu" firstAttribute="leading" secondItem="kmF-f9-O0R" secondAttribute="leadingMargin" id="ej9-PG-TAt"/>
+                            <constraint firstItem="VdY-4N-zsu" firstAttribute="top" secondItem="sB8-MP-GEl" secondAttribute="bottom" constant="50" id="eqs-RY-zpO"/>
+                            <constraint firstItem="hOS-wS-F6A" firstAttribute="centerX" secondItem="kmF-f9-O0R" secondAttribute="centerX" id="u7k-hE-5bw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wCz-1y-cKY"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="getColor">
+                            <color key="value" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="gifImage" destination="hOS-wS-F6A" id="xbv-6w-9XQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVJ-Ea-DA6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2124" y="754.27286356821594"/>
+        </scene>
+    </scenes>
+</document>
