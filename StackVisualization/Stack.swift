@@ -11,10 +11,10 @@
 import Foundation
 
 class Stack {
-    public var items = Array<Int>()
+    public var items = Array<String>()
     
     
-    func push(item: Int) {
+    func push(item: String) {
         if items.count == 7 {
             print("You can not insert any more")
             return
@@ -24,13 +24,15 @@ class Stack {
     }
     
     func pop() {
-        items.removeLast()
+        if items.count > 0 {
+            items.removeLast()
+        }
     }
     
-    func top() -> Int {
+    func top() -> String {
         if items.count == 0 {
             print("Error , Stack is Empty")
-            return -1
+            return "-1"
         }
         
         return items.last!
