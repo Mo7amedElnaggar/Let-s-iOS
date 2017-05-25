@@ -37,10 +37,22 @@
                                     <action selector="seconVCAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Wl-An-bU5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mohamed El-Naggar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmz-ug-dWB">
+                                <rect key="frame" x="30" y="676" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bI6-XX-O1H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <color key="textColor" red="0.89408810839183928" green="0.85798977566944945" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.88074459597789334" green="1" blue="0.9478374101614202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xmz-ug-dWB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="0fy-40-UNR"/>
                             <constraint firstItem="ibH-ez-sdE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B0O-l0-ape"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xmz-ug-dWB" secondAttribute="trailing" constant="10" id="MgH-Ib-XeJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xmz-ug-dWB" secondAttribute="bottom" constant="20" id="Quv-rK-Mgp"/>
                             <constraint firstItem="ibH-ez-sdE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vc7-BS-wWm"/>
                         </constraints>
                     </view>
@@ -71,9 +83,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZvE-Pm-8Ra">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="SF0-Op-bhj"/>
+                                    <constraint firstAttribute="height" constant="60" id="SF0-Op-bhj"/>
                                 </constraints>
                                 <items>
                                     <navigationItem title="Second VC" id="HwU-oI-AKi">
@@ -85,13 +97,25 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mohamed El-Naggar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDf-ca-Pvd">
+                                <rect key="frame" x="30" y="676" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xcm-7V-voT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.68153769744000869" blue="0.90302342621930465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.86044097209962644" green="0.91612831779884785" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1Up-sC-XnD" firstAttribute="centerY" secondItem="cXb-2h-J7J" secondAttribute="centerY" id="9Ec-2f-Ibg"/>
                             <constraint firstItem="1Up-sC-XnD" firstAttribute="leading" secondItem="cXb-2h-J7J" secondAttribute="leadingMargin" constant="10" id="Gzq-4M-58o"/>
+                            <constraint firstItem="PDf-ca-Pvd" firstAttribute="trailing" secondItem="cXb-2h-J7J" secondAttribute="trailingMargin" constant="10" id="MMg-Q4-gEd"/>
+                            <constraint firstItem="PDf-ca-Pvd" firstAttribute="leading" secondItem="cXb-2h-J7J" secondAttribute="leadingMargin" constant="10" id="Oeu-0z-HmN"/>
                             <constraint firstAttribute="trailing" secondItem="ZvE-Pm-8Ra" secondAttribute="trailing" id="PJU-4y-u3B"/>
                             <constraint firstItem="ZvE-Pm-8Ra" firstAttribute="leading" secondItem="cXb-2h-J7J" secondAttribute="leading" id="Pta-W8-Hcj"/>
+                            <constraint firstItem="CG4-OD-Myt" firstAttribute="top" secondItem="PDf-ca-Pvd" secondAttribute="bottom" constant="20" id="hHf-83-zjP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Up-sC-XnD" secondAttribute="trailing" constant="10" id="ilA-A1-IcH"/>
                             <constraint firstItem="1Up-sC-XnD" firstAttribute="centerX" secondItem="cXb-2h-J7J" secondAttribute="centerX" id="qaM-lb-IGk"/>
                             <constraint firstItem="ZvE-Pm-8Ra" firstAttribute="top" secondItem="cXb-2h-J7J" secondAttribute="top" id="t20-WF-0fc"/>
