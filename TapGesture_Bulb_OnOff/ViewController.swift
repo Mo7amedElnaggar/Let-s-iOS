@@ -12,13 +12,19 @@ import UIKit
 class ViewController: UIViewController {
     
     var lightOn: Bool = false
-
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var lableLight: UILabel!
     
+    // Change Status Bar to Light Content
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         // Adding GesturesRecognizer to imageView
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.changeLight))
@@ -38,7 +44,7 @@ class ViewController: UIViewController {
             lightOn = true  // Change the status of lighton boolean variable = true
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
