@@ -1,2 +1,2 @@
 ## Adding UITapGestureRecognizer to Image View
-![](http://gph.is/2rjE58M)
+![](https://media.giphy.com/media/13wyG0PrgC7aLe/giphy.gif)
