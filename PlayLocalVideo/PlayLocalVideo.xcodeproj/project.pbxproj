@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		343AD0081EFEBC0000A69F72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343AD0071EFEBC0000A69F72 /* AppDelegate.swift */; };
+		343AD00A1EFEBC0000A69F72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343AD0091EFEBC0000A69F72 /* ViewController.swift */; };
+		343AD00D1EFEBC0000A69F72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343AD00B1EFEBC0000A69F72 /* Main.storyboard */; };
+		343AD00F1EFEBC0000A69F72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343AD00E1EFEBC0000A69F72 /* Assets.xcassets */; };
+		343AD0121EFEBC0000A69F72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343AD0101EFEBC0000A69F72 /* LaunchScreen.storyboard */; };
+		343AD01A1EFEBD1B00A69F72 /* videoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343AD0191EFEBD1B00A69F72 /* videoCell.swift */; };
+		343AD01C1EFEBE4D00A69F72 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343AD01B1EFEBE4D00A69F72 /* extensions.swift */; };
+		343AD0201EFEC90400A69F72 /* AVPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343AD01F1EFEC90400A69F72 /* AVPlayerVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		343AD0041EFEBC0000A69F72 /* PlayLocalVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayLocalVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		343AD0071EFEBC0000A69F72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		343AD0091EFEBC0000A69F72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		343AD00C1EFEBC0000A69F72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		343AD00E1EFEBC0000A69F72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		343AD0111EFEBC0000A69F72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		343AD0131EFEBC0000A69F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		343AD0191EFEBD1B00A69F72 /* videoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videoCell.swift; sourceTree = "<group>"; };
+		343AD01B1EFEBE4D00A69F72 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		343AD01D1EFEC06200A69F72 /* emojiZone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = emojiZone.mp4; sourceTree = "<group>"; };
+		343AD01F1EFEC90400A69F72 /* AVPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		343AD0011EFEBC0000A69F72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		343ACFFB1EFEBC0000A69F72 = {
+			isa = PBXGroup;
+			children = (
+				343AD0061EFEBC0000A69F72 /* PlayLocalVideo */,
+				343AD0051EFEBC0000A69F72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		343AD0051EFEBC0000A69F72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				343AD0041EFEBC0000A69F72 /* PlayLocalVideo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		343AD0061EFEBC0000A69F72 /* PlayLocalVideo */ = {
+			isa = PBXGroup;
+			children = (
+				343AD0071EFEBC0000A69F72 /* AppDelegate.swift */,
+				343AD0091EFEBC0000A69F72 /* ViewController.swift */,
+				343AD01F1EFEC90400A69F72 /* AVPlayerVC.swift */,
+				343AD0191EFEBD1B00A69F72 /* videoCell.swift */,
+				343AD01B1EFEBE4D00A69F72 /* extensions.swift */,
+				343AD00B1EFEBC0000A69F72 /* Main.storyboard */,
+				343AD01D1EFEC06200A69F72 /* emojiZone.mp4 */,
+				343AD01E1EFEC06B00A69F72 /* Videos */,
+				343AD00E1EFEBC0000A69F72 /* Assets.xcassets */,
+				343AD0101EFEBC0000A69F72 /* LaunchScreen.storyboard */,
+				343AD0131EFEBC0000A69F72 /* Info.plist */,
+			);
+			path = PlayLocalVideo;
+			sourceTree = "<group>";
+		};
+		343AD01E1EFEC06B00A69F72 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		343AD0031EFEBC0000A69F72 /* PlayLocalVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 343AD0161EFEBC0000A69F72 /* Build configuration list for PBXNativeTarget "PlayLocalVideo" */;
+			buildPhases = (
+				343AD0001EFEBC0000A69F72 /* Sources */,
+				343AD0011EFEBC0000A69F72 /* Frameworks */,
+				343AD0021EFEBC0000A69F72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayLocalVideo;
+			productName = PlayLocalVideo;
+			productReference = 343AD0041EFEBC0000A69F72 /* PlayLocalVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		343ACFFC1EFEBC0000A69F72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Mohamed El-Naggar";
+				TargetAttributes = {
+					343AD0031EFEBC0000A69F72 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 343ACFFF1EFEBC0000A69F72 /* Build configuration list for PBXProject "PlayLocalVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 343ACFFB1EFEBC0000A69F72;
+			productRefGroup = 343AD0051EFEBC0000A69F72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				343AD0031EFEBC0000A69F72 /* PlayLocalVideo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		343AD0021EFEBC0000A69F72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				343AD0121EFEBC0000A69F72 /* LaunchScreen.storyboard in Resources */,
+				343AD00F1EFEBC0000A69F72 /* Assets.xcassets in Resources */,
+				343AD00D1EFEBC0000A69F72 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		343AD0001EFEBC0000A69F72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				343AD00A1EFEBC0000A69F72 /* ViewController.swift in Sources */,
+				343AD0081EFEBC0000A69F72 /* AppDelegate.swift in Sources */,
+				343AD01A1EFEBD1B00A69F72 /* videoCell.swift in Sources */,
+				343AD01C1EFEBE4D00A69F72 /* extensions.swift in Sources */,
+				343AD0201EFEC90400A69F72 /* AVPlayerVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		343AD00B1EFEBC0000A69F72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				343AD00C1EFEBC0000A69F72 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		343AD0101EFEBC0000A69F72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				343AD0111EFEBC0000A69F72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		343AD0141EFEBC0000A69F72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		343AD0151EFEBC0000A69F72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		343AD0171EFEBC0000A69F72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PlayLocalVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Naggar.PlayLocalVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		343AD0181EFEBC0000A69F72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PlayLocalVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Naggar.PlayLocalVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		343ACFFF1EFEBC0000A69F72 /* Build configuration list for PBXProject "PlayLocalVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343AD0141EFEBC0000A69F72 /* Debug */,
+				343AD0151EFEBC0000A69F72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		343AD0161EFEBC0000A69F72 /* Build configuration list for PBXNativeTarget "PlayLocalVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343AD0171EFEBC0000A69F72 /* Debug */,
+				343AD0181EFEBC0000A69F72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 343ACFFC1EFEBC0000A69F72 /* Project object */;
+}
