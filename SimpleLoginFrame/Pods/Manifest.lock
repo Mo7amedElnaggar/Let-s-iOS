@@ -1,0 +1,12 @@
+PODS:
+  - SkyFloatingLabelTextField (3.1.0)
+
+DEPENDENCIES:
+  - SkyFloatingLabelTextField
+
+SPEC CHECKSUMS:
+  SkyFloatingLabelTextField: 26a92ad407044dd5a7c3e4e348738ff0991514fe
+
+PODFILE CHECKSUM: a33fb9c2b5baa1e63b0e4913eb85e06547c15543
+
+COCOAPODS: 1.2.1
