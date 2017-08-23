@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YsP-0K-XaW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About us-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="LocalizationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="39t-2c-DB5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFt-dG-edz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9T-9x-niF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="679.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_aboutus" translatesAutoresizingMaskIntoConstraints="NO" id="lMX-mf-MHB">
+                                                <rect key="frame" x="131" y="50" width="112.5" height="112.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="lMX-mf-MHB" secondAttribute="height" id="cxY-Wh-EY3"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yg-JJ-OsR">
+                                                <rect key="frame" x="30" y="212.5" width="315" height="467"/>
+                                                <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="lMX-mf-MHB" firstAttribute="top" secondItem="t9T-9x-niF" secondAttribute="top" constant="50" id="7yI-gy-jay"/>
+                                            <constraint firstItem="lMX-mf-MHB" firstAttribute="centerX" secondItem="t9T-9x-niF" secondAttribute="centerX" id="8h2-ct-tfv"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Yg-JJ-OsR" secondAttribute="trailing" constant="30" id="DIu-xU-zvw"/>
+                                            <constraint firstAttribute="bottom" secondItem="4Yg-JJ-OsR" secondAttribute="bottom" id="lGo-Sh-oIb"/>
+                                            <constraint firstItem="4Yg-JJ-OsR" firstAttribute="leading" secondItem="t9T-9x-niF" secondAttribute="leading" constant="30" id="pye-pE-fR3"/>
+                                            <constraint firstItem="4Yg-JJ-OsR" firstAttribute="top" secondItem="lMX-mf-MHB" secondAttribute="bottom" constant="50" id="qEd-iG-AYP"/>
+                                            <constraint firstItem="lMX-mf-MHB" firstAttribute="width" secondItem="t9T-9x-niF" secondAttribute="width" multiplier="0.3" id="z1g-YN-H57"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="t9T-9x-niF" secondAttribute="trailing" id="0qJ-dq-tRE"/>
+                                    <constraint firstItem="t9T-9x-niF" firstAttribute="leading" secondItem="RFt-dG-edz" secondAttribute="leading" id="MjY-RY-gmB"/>
+                                    <constraint firstItem="t9T-9x-niF" firstAttribute="top" secondItem="RFt-dG-edz" secondAttribute="top" id="fsU-72-bcR"/>
+                                    <constraint firstAttribute="bottom" secondItem="t9T-9x-niF" secondAttribute="bottom" id="sJG-v3-yfU"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="39t-2c-DB5" secondAttribute="bottom" id="2z1-ep-mwI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RFt-dG-edz" secondAttribute="bottom" id="C2e-p7-Abf"/>
+                            <constraint firstAttribute="trailing" secondItem="39t-2c-DB5" secondAttribute="trailing" id="Cj8-YL-yy6"/>
+                            <constraint firstItem="39t-2c-DB5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FRz-pA-mzx"/>
+                            <constraint firstAttribute="trailing" secondItem="RFt-dG-edz" secondAttribute="trailing" id="bKz-P7-8EV"/>
+                            <constraint firstItem="39t-2c-DB5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cIk-An-C1C"/>
+                            <constraint firstItem="RFt-dG-edz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gMn-DR-mzh"/>
+                            <constraint firstItem="t9T-9x-niF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="olr-nQ-1HA"/>
+                            <constraint firstItem="RFt-dG-edz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wBG-Ms-oZb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About us" id="yAF-7s-ssv">
+                        <barButtonItem key="leftBarButtonItem" title="Ar" id="x8v-Yt-mLC">
+                            <connections>
+                                <action selector="changeLanguage:" destination="BYZ-38-t0r" id="Rug-WQ-3I4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.79999999999995" y="792.95352323838085"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s43-o3-6DY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YsP-0K-XaW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QCu-e6-oUy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.91308504339999996" green="0.31000709529999998" blue="0.24092274899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.91308504339999996" green="0.31000709529999998" blue="0.24092274899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="67Q-eh-ZlO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NYt-cQ-hcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.59999999999999" y="792.95352323838085"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="374" height="579"/>
+        <image name="ic_aboutus" width="22" height="22"/>
+    </resources>
+</document>
