@@ -1,0 +1,6 @@
+framework module Pods_LocalizeSwiftLibTests {
+  umbrella header "Pods-LocalizeSwiftLibTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
